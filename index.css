@@ -1,0 +1,197 @@
+
+.card {
+    position: relative;
+    display: inline-block; 
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 100px;
+    z-index: 1;
+}
+.card-img-overlay h5{
+    text-align: right;
+    font-size: 25px;
+}
+.card-img-overlay p, .card-img-overlay button {
+    color: white;
+    z-index: 1;
+    font-size: small;
+    text-align: right;
+    font-size: 14px;
+}
+
+.img{
+    height: 717px;
+    filter: brightness(0.5);
+}
+
+.oradores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+}
+
+.card-oradores{
+    width: 250px;
+    height: 450px;
+    display: inline-block;
+    margin-right: 10px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(39, 49, 122, 0.5);
+}
+
+.card-img-top{
+    width: 249px;
+    height: 40%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.btn-warning, .btn-info, .btn-secondary, .btn-danger{ /*los botones*/
+    width: 70px ;
+    height:30px ;
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: 05px ;
+}
+.btn-info{
+    color: white;
+}
+.btn-warning{
+    color: black;
+}
+
+.card-title{
+    margin-bottom: 20px;
+    margin-left: 05px ;
+}
+
+.card-text{
+    padding: 05px;
+    margin-left: 05px ;
+    font-size: small;
+}
+
+
+
+.imgBa1{
+    position: relative;
+}
+.imgPlaya{
+    max-width: 10%;
+    max-height: 100%;    
+}
+
+.fs-5{
+    margin-left: 20px;
+    margin-top: 15px; 
+}
+.texto-playa{
+    font-size: small;
+    margin-left: 20px;
+}
+
+.btn-secondary-light{
+    margin-left: 20px;
+    width: 90px ;
+    height:30px ;
+    font-size: 10px;  
+    color: white;
+    border-radius: 8px;
+    border-color: white;
+}
+.honolulu{
+    width: 100%;
+    height: 300px;
+    border: solid;
+    border-color: white;
+}
+.playa{
+    color: white;   
+}
+
+/*----------*/
+
+
+
+
+
+
+
+/*
+.form{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 8px;
+    margin: 0 auto;
+}*/
+.nombre{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nom{
+    width: 400px;
+    height: 35px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-color: #1D4358;
+    box-shadow: 0 0 10px rgba(39, 49, 122, 0.5);
+    padding: 10px;
+
+}
+.sobre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cuadro{
+    width: 800px;
+    height: 100px;
+    border-radius: 10px;
+    border-color: #1D4358;
+    box-shadow: 0 0 10px rgba(39, 49, 122, 0.5);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.formText{
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.enviar{
+    background-color: #96C93E;
+    color: white;
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    
+}
+
+
