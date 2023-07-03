@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Conversor</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+          <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="imagenes_integrador_front/codoacodo.png" alt="Logo" width="100" height="50" class="d-inline-block align-text-top">
+              Conf Bs As
+              </a>
+              <div>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Conferencia</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#">Oradores</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#">Lugar y Fecha</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#">Conviértete en Orador</a>
+                      </li>
+                      <div>
+                        <li class="nav-item">
+                          <a class="nav-link active" style="color:#299B45" href="conversor.html">Comprar Tickets </a>
+                      </li>
+                      </div>
+                      
+                  </ul>
+
+          </div>
+          </div>
+      </nav>
+      </header>   
+
+    <div >
+          <div class="cardDescuentos">
+              <h5 class="card-title">Estudiante</h5>
+              <p class="card-text">Tienen un descuento <strong>80%</strong> Presentar documentación</p>
+            </div>
+        
+          <div class="cardDescuentos">
+              <h5 class="card-title">Trainee</h5>
+              <p class="card-text">Tienen un descuento <strong>50%</strong> Presentar documentación</p>
+            </div>
+        
+            <div class="cardDescuentos">
+            <h5 class="card-title">Junior</h5>
+            <p class="card-text">Tienen un descuento <strong>15%</strong> Presentar documentación</p>
+        </div>
+    </div>
+
+    <section class="oradoresTicket">
+        <p class="text-uppercase fs-6">Venta</p>
+        <p class="text-uppercase fs-5">Valor de Ticket $200</p> 
+      </section>
+
+      <div class="nombre">
+        <input class="nom" type="text" placeholder="Nombre..." /> 
+        <input class="nom" type="text" placeholder="Apellido..." /> 
+        </div>
+        
+        <input class="email" type="text" placeholder="Email..." />
+        
+
+      <form id="calcularPrecioFinal" method="POST" class="p-5">
+        
+        
+        <div class="row">
+            <div class="col p-1">
+            <label for="cantidadTicket">Cantidad</label>
+            <input type="text" id="cantidadTicket" class="form-control w-100"  placeholder="Cantidad">
+            </div>
+
+          <div class="col p-1">
+            <label for="categoria" >Categoría</label>
+            <select id="categoria" class="form-select " >
+              <option >Seleccione una opción...</option>
+              <option value="estudiante">Estudiante</option>
+              <option value="trainee">Trainee</option>
+              <option value="junior">Junior</option>
+            </select>
+          </div>
+        </div>
+   
+          <a class="btn btn-primary disabled placeholder col-4 w-100" id="resultado">Total a pagar: $</a>
+
+          <div class="row">
+            <div class="col p-1">
+                <button type="reset" id="borrar" class="btn btn-success w-90" style="background-color:rgb(107, 208, 7) ; border-color: rgb(84, 161, 7); ;">Borrar</button>
+            </div>
+            <div class="col p-1">
+                <button type="submit" id="resumen" class="btn btn-success w-90" style="background-color:rgb(107, 208, 7) ; border-color: rgb(84, 161, 7);">Resumen</button>
+            </div>
+        </div>
+    </form>
+    <footer class="footer">
+  
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#1D4358">
+          <div class="container-fluid">
+              <ul class="navbar-nav" style="justify-content: space-evenly; width: 100%">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Conferencias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Términos y Condiciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Privacidad</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Estudiantes</a>
+                </li>
+              
+                  
+            </div>
+          </div>
+        </nav>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="index.js"></script> 
+</body>
+</html>
